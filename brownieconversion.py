@@ -1,0 +1,35 @@
+#FILE:brownieconversion.python
+#NAME:brownieconversion
+#AUTHOR: Leigh Ball
+#DATE:jan 29,2022
+#PURPOSE: adjust borwnie recipe to make the number of your choice
+numBrown=input('How many brownies would you like to bake?: \n')
+numBrownies=float(numBrown)
+#butter=float(.5/9)
+butter=float("{:.2f}".format(.5/9))
+#eggs=float(2/9)
+eggs=float("{:.2f}".format(2/9))
+#van=float(1/9)
+van=float("{:.2f}".format(1/9))
+#sugar=float(1/9)
+sugar=float("{:.2f}".format(1/9))
+#flour=float(.5/9)
+flour=float("{:.2f}".format(.5/9))
+#coco=float(.5/9)
+coco=float("{:.2f}".format(.5/9))
+#bp=float(.25/9)
+bp=float("{:.2f}".format(.25/9))
+#salt=float(.25/9)
+salt=float("{:.2f}".format(.25/9))
+
+print('***Recipe for', numBrown, 'brownies***')
+print('cups of butter: ',butter*numBrownies)
+print('eggs: ',eggs*numBrownies)
+print('tsps of vanilla: ',van*numBrownies)
+print('cups of sugar: ',sugar*numBrownies)
+print('cups of flour: ',flour*numBrownies)
+print('cups of cocoa powder:  ',coco*numBrownies)
+print('tsps of baking powder: ',bp*numBrownies)
+print('tsps of salt: ',salt*numBrownies)
+print('**tips**\n round the numbers up or down as needed to match the measurements of your baking supplies\n use a greased pan in a preheated oven \n cooking time will vary based on your oven type,pan type, elevation, and possible other factors so be sure to keep an eye on them as they bake.')
+print(input('\n\nHit Enter to Close\n'))
